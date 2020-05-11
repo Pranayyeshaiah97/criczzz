@@ -1,0 +1,113 @@
+
+body{
+    margin:-2;
+    padding: -1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.video{
+    z-index: -1;
+    position: fixed;
+}
+@media(min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .video{
+        width: auto%;
+        height: 100%;
+    }
+}
+.criczzz{
+    font-size: xx-large;
+    font-weight: bold;
+}
+a{
+    color: white;
+}
+
+
+
+
+/* CSS for adding team players */
+.teamPlayers{
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    left: 200px;
+    top: 200px;
+    
+}
+.teamPlayers:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+.teamPlayers:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+} 
+.teamPlayers:before,
+.teamPlayers:after{
+    background: linear-gradient(235deg, red, #060c21, #00bcd4);
+}
+
+/* add player */
+.addPlayers{
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    left: 800px;
+    bottom: 300px;
+    
+}
+.addPlayers:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+.addPlayers:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+} 
+.addPlayers:before,
+.addPlayers:after{
+    background: linear-gradient(235deg, red, #060c21, #00bcd4);
+}
+label{
+    color: white;
+}

@@ -16,3 +16,7 @@ document.getElementById("signUpButton").addEventListener("click", function signU
 document.getElementById("signUpCloseButton").addEventListener("click", function signUpCloseButton(){
     document.querySelector(".signUpbackGroundOnForm").style.display="none";
 })
+
+document.getElementById("signIn").onclick =function(){
+    location.href = "/Users/Ramesh/Downloads/Cricket ScoringBoard/homepage.html";
+};

@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>homepage</title>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- bootstrap javasript link -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+
+    <!-- Css external link -->
+    <link rel="stylesheet" href="/Users/Ramesh/Downloads/Cricket ScoringBoard/public/css/homepage.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand criczzz" href="#">Criczzz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">ADD TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PLAY MATCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PLAY TOURNAMENT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MY MATCHES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MY TOURNAMENTS</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">LOGOUT</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Background video -->
+    <section class= "backgroundVideo">
+        <video autoplay muted loop plays-inline class="video">
+            <source src="/Users/Ramesh/Downloads/Cricket ScoringBoard/Videos/backgroundvideoloop.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Adding team -->
+    <div class=teamPlayers>
+        <h2>player</h2>
+    </div>
+    
+    <section class=addPlayers>
+        <div>
+        <input class="playerName" type="text" placeholder="Player Name">
+        <input class="playerName" type="email" placeholder="Email Address">
+        <input class="playerName" type="number" placeholder="Phone Number">
+        <select id="playingRole">
+            <option value="Top-order batsman">Top-order batsman</option>
+            <option value="middle-order batsman">middle-order batsman</option>
+            <option value="Wicket-keeper batsman">Wicket-keeper batsman</option>
+            <option value="Wicket-keeper">Wicket-keeper</option>
+            <option value="Bowler">Bowler</option>
+            <option value="All-Rounder">All-Rounder</option>
+            <option value="Lower-order batsman">Lower-order batsman</option>
+            <option value="Opening batsman">Opening batsman</option>
+            <option value="None">None</option>
+        </select>
+        <select id="battingStyle">
+            <option value="Left-Hand batsman">Left-Hand batsman</option>
+            <option value="Right-Hand batsman">Right-Hand batsman</option>
+        </select>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <button class="cancelButton btn btn-outline-danger" type="submit">Cancel</button>
+        <button class="updateButton btn btn-outline-danger" type="submit">Update</button>
+         
+    </div>
+    </section>
+
+</body>
+</html>
