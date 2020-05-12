@@ -125,3 +125,23 @@
     text-align: center;
     margin: 15px auto;
 }
+.brandImage{
+    width: 8%;
+}
+.brandName{
+    position: relative;
+    right: 680px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.brandImage2{
+    width: 50%;
+    position: relative;
+    bottom: 150px;
+    right: 150px;
+}
+.brandNameandTag{
+position: relative;
+bottom: 450px;
+left: 100px;
+}
