@@ -18,5 +18,5 @@ document.getElementById("signUpCloseButton").addEventListener("click", function 
 })
 
 document.getElementById("signIn").onclick =function(){
-    location.href = "/Users/Ramesh/Downloads/Cricket ScoringBoard/homepage.html";
+    location.href = (__dirname+"/Cricket_ScoringBoard/homepage.html");
 };
