@@ -7,7 +7,9 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.brandImage{
+    width: 5%;
+}
 .video{
     z-index: -1;
     position: fixed;
@@ -31,7 +33,9 @@ body{
 a{
     color: white;
 }
-
+.nav-link{
+    font-size: small;
+}
 
 
 
@@ -109,5 +113,11 @@ a{
     background: linear-gradient(235deg, red, #060c21, #00bcd4);
 }
 label{
+    color: white;
+}
+
+/* Add Team */
+.teamName{
+    
     color: white;
 }
