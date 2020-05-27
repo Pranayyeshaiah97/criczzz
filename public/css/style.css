@@ -9,15 +9,15 @@
 .menubar{
     position: relative;
     text-align: right ;
-} 
+}
 .topRightContainer{
     position: relative;
     background-color: #e58a8a;
     width: 600px;
     height: 600px;
     z-index: -1;
-    
-    
+
+
 }
 .topLeftContainer{
     background-color: black;
@@ -97,12 +97,12 @@
    width: 50%;
    display: block;
    margin: 15px auto;
- 
+
 }
 .signInButtons{
     width: 30%;
     position: relative;
-    left: 80px; 
+    left: 80px;
     top: 20px;
 }
 #forgotPassword{
@@ -126,7 +126,9 @@
     margin: 15px auto;
 }
 .brandImage{
+  position:relative;
     width: 8%;
+    top: -20px;
 }
 .brandName{
     position: relative;

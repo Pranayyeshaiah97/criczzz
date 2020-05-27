@@ -8,7 +8,7 @@ body{
     padding: 0;
 }
 .brandImage{
-    width: 5%;
+  width: 5%;
 }
 .video{
     z-index: -1;
@@ -22,7 +22,7 @@ body{
 }
 @media(max-aspect-ratio: 16/9){
     .video{
-        width: auto%;
+        width: auto;
         height: 100%;
     }
 }
@@ -41,14 +41,15 @@ a{
 
 /* CSS for adding team players */
 .teamPlayers{
-    width: 400px;
-    height: 500px;
-    background-color: black;
-    position: relative;
-    display: flex;
+    max-width: 400px;
+    margin: 50px auto;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    position: absolute;
     left: 200px;
-    top: 200px;
-    
+    top: 100px;
+
 }
 .teamPlayers:before{
     content: '';
@@ -70,7 +71,7 @@ a{
     background: #fff;
     z-index: -1;
     filter: blur(40px);
-} 
+}
 .teamPlayers:before,
 .teamPlayers:after{
     background: linear-gradient(235deg, red, #060c21, #00bcd4);
@@ -85,7 +86,7 @@ a{
     display: flex;
     left: 800px;
     bottom: 300px;
-    
+
 }
 .addPlayers:before{
     content: '';
@@ -107,7 +108,7 @@ a{
     background: #fff;
     z-index: -1;
     filter: blur(40px);
-} 
+}
 .addPlayers:before,
 .addPlayers:after{
     background: linear-gradient(235deg, red, #060c21, #00bcd4);
@@ -117,7 +118,65 @@ label{
 }
 
 /* Add Team */
-.teamName{
-    
+
+.player{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+  }
+  .player:last-child {
+    border-bottom: 0;
+  }
+  form {
+    text-align: center;
+    margin-left: 20px;
+
+  }
+  button {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #A683E3;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+  }
+  input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+
+  }
+
+  input[type="text"]:focus {
+    outline: none;
     color: white;
-}
+    box-shadow: inset 0 -3px 0 0 #A683E3;
+  }
+
+  ::placeholder {
+    color: grey;
+    opacity: 1;
+  }
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+  h1 {
+    color: #fff;
+    padding: 10px;
+  }
+  p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+  }

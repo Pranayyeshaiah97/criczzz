@@ -1,6 +1,16 @@
 <!-- Adding team -->
 <%- include ("partials/header") %>
 <div class=teamPlayers>
-    <h4 class="teamName">Team Players</h4>
-</div>
-<%- include ("partials/footer") %> 
+        <% for(var i=0; i<newPlayer.length; i++){ %>
+        <div class="player" id="heading">
+            <input type="checkbox">
+            <p><%=  newPlayer[i] %></p>%>
+        </div>
+        <% } %>
+        <form class="player" action="/addTeam" method="POST">
+            <input type="text" name="player" placeholder="Player Name">
+            <button type="submit" name="button">+</button>
+        </form>
+    </div>
+
+<%- include ("partials/footer") %>

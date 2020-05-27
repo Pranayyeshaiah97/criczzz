@@ -1,199 +1,227 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap css link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Font awesome link -->
-    <script src="https://kit.fontawesome.com/2b6b66256a.js" crossorigin="anonymous"></script>
-    <!-- bootstrap javasript link -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!--CSS link-->
-    <link rel="stylesheet" href= "/css/style.css"> 
-    <!-- CSS external link for signupform -->
-    <link rel="stylesheet" href="/css/signUpForm.css">
+  <!-- bootstrap css link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+  <!-- Font awesome link -->
+  <script src="https://kit.fontawesome.com/2b6b66256a.js" crossorigin="anonymous"></script>
+  <!-- bootstrap javasript link -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
 
-    <title>Gully Cricket Scoring Board</title>
-    <link rel="icon" href="/Images/Helmet.png" type="image/png" sizes="16x16">
+  <!--CSS link-->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- CSS external link for signupform -->
+  <link rel="stylesheet" href="/css/signUpForm.css">
+
+  <title>Gully Cricket Scoring Board</title>
+  <link rel="icon" href="/Images/Helmet.png" type="image/png" sizes="16x16">
 </head>
 
 <body>
-    <!-- Menu Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img class="brandImage"src="/Images/Helmet.png" alt="">
-      </a>
-        <a class="navbar-brand brandName" href="#">Criczzz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse menuBar" id="navbarText">
+  <!-- Menu Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img class="brandImage" src="/Images/Helmet.png" alt="">
+    </a>
+    <a class="navbar-brand brandName" href="#">Criczzz</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menuBar" id="navbarText">
 
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " id="signInButton" onclick="signInButton()" href="#">Sign In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="signUpButton" onclick="signUpbutton()" href="#">sign-up</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">about us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
-            </li>
-          </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="signInButton" onclick="signInButton()" href="#">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="signUpButton" onclick="signUpbutton()" href="#">sign-up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </nav>
+
+
+
+  <!-- main top page   -->
+  <div class="row">
+    <div class="topRightContainer col-lg-6 ">
+      <div class="heading">
+        <img class="brandImage2" src="/Images/Helmet.png">
+        <div class="brandNameandTag">
+          <h1>Criczzz</h1>
+          <h6>Score your game</h6>
         </div>
-      </nav>
-</nav>
-
- 
-
-<!-- main top page   -->
-<div class="row">
-<div class="topRightContainer col-lg-6 " >
-  <div class="heading">
-    <img class="brandImage2" src="/Images/Helmet.png">
-    <div class="brandNameandTag">
-  <h1>Criczzz</h1>
-  <h6>Score your game</h6>
-</div>
-  </div>
-</div> 
-
-<div class="topLeftContainer col-lg-6" >
-  <h1 class="welcome">Welcome</h1>
-  <p class="IntroductionText"> Must you with him from him her were more. <br>
-    In eldest be it result should remark vanity square.<br>
-    Unpleasant especially assistance sufficient he<br> comparison so inquietude.
-     Branch one shy. 
-     </p>
-     
-     
-</div>
-</div>
-
-<!-- Carousal middle container -->
-<div class="middle-container">
-<h1 class="headingOfMiddleContainer">What you can do.</h1>
-<hr class="tophr">
-
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
-  <section id="features">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-      <h1>Ball to Ball scoring</h1>
-      <p class="paragraph">Stop using painful paper scorecards and score your matches on CricHeroes App just like an international match.</p>
-      
-    </div>
-    <div class="carousel-item" >
-      <h1>Live Scoring</h1>
-      <p class="paragraph">Share your live scores with the world and explore live scores of local cricket matches around you.</p>
-      
-    </div>
-    <div class="carousel-item" >
-      <h1>Tournaments</h1>
-      <p class="paragraph">Score local cricket tournaments just like the IPL! Have your own dedicated Tournament Page with Schedule, Leaderboard, Points Table, Sponsors, and much more, completely FREE!</p>
-      
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  <hr class="bottomhr">
-</div>
-</section>
-<!-- Sign In Popup form -->
-<div class="backGroundOnForm">
-  <div class="signInForm">
-    <form>
-      <h1 class="signInText">Sign In</h1>
-      <input class="formTextBoxes" type="text" placeholder="E-mail ID">
-      <input class="formTextBoxes" type="password" placeholder="Password"> 
-      <div id="forgotPassword"><a href="">Forgot Password?</a></div>
-      <a href="/homepage"><input type="button" class="btn btn-outline-danger signInButtons" value="sign in"></a>
-      <button id="cancelButton" onclick="cancelButton()" type="button" class="btn btn-outline-dark signInButtons">Cancel</button>
-    </form>
-  </div>
-</div>
-
-
-     <!-- Sign Up Popup form -->
-     <div class="signUpbackGroundOnForm">
-      <div class="signUpform">
-
-      <form action="/" class="" method="POST">
-        <h1 >Sign UP</h1>
-        <h1 class="closeButton" onclick="signUpCloseButton()" id="signUpCloseButton" >+</h1>
-        <input class="signUpFirstName signUpTextBoxes" name="fName" type="text" placeholder="First name" > 
-        <input class="signUpSurname signUpTextBoxes" name="fName" type="text" placeholder="Last name">
-        <input class="signUpEmail signUpTextBoxes" name="eMail" type="email" placeholder="Enter email address" >
-        <input  class="signUpPass signUpTextBoxes" name="pass" type="password" placeholder="Enter Password" >
-        <input  class="signUpRePass signUpTextBoxes" name="rePass" type="password" placeholder="Re-enter Password" >
-        <span>
-          <div class="signUpText birthday">Birthday</div>
-        <select aria-label="Day" name="birthday_day" id="day" title="Day" class="calendar"><option value="0">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24" selected="1">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select> 
-        <select aria-label="Month" name="birthday_month" id="month" title="Month" class="calendar"><option value="0">Month</option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4" selected="1">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sept</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
-        <select aria-label="Year" name="birthday_year" id="year" title="Year" class="calendar"><option value="0">Year</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995" selected="1">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1914">1914</option><option value="1913">1913</option><option value="1912">1912</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1908">1908</option><option value="1907">1907</option><option value="1906">1906</option><option value="1905">1905</option></select>
-        </span>
-    
-        <div class="signUpText gender">Gender</div>
-        <div class="buttons">
-        <span class="_5k_3" data-type="radio" data-name="gender_wrapper" id="u_0_13">
-        <span class="_5k_2 _5dba">
-        <input type="radio" class="_8esa" name="sex" value="1" id="u_0_6">
-        <label class="radioButton" for="u_0_6">Female</label>
-        </span>
-        <span class="_5k_2 _5dba">
-        <input type="radio" class="_8esa" name="sex" value="2" id="u_0_7">
-        <label class="radioButton" for="u_0_7">Male</label>
-        </span>
-        <span class="_5k_2 _5dba">
-        <input type="radio" class="_8esa" name="sex" value="-1" id="u_0_8">
-        <label class="radioButton" for="u_0_8">Custom</label>
-        </span>
-        </span>
-        </div>
-        <button type="submit" class="btn btn-outline-danger signUpButton">Sign up</button>
-      
-      </form>
       </div>
     </div>
 
-</div>
-<footer class="footer">
-  
-  <div class="footText">
-    wwww.crickzzz.com <br>
-    123-456-789
+    <div class="topLeftContainer col-lg-6">
+      <h1 class="welcome">Welcome</h1>
+      <p class="IntroductionText"> Must you with him from him her were more. <br>
+        In eldest be it result should remark vanity square.<br>
+        Unpleasant especially assistance sufficient he<br> comparison so inquietude.
+        Branch one shy.
+      </p>
+
+
+    </div>
   </div>
-  <div class="fontAwesome">
-    <a href="https://www.facebook.com"><i class="fab fa-facebook fa-lg" style="color: white"></i></a>
-    <a href="https://www.facebook.com"><i class="fab fa-twitter fa-lg" style="color: white"></i></a>
-    <a href="https://www.facebook.com"><i class="fab fa-instagram fa-lg" style="color: white"></i></a>
-   </div>
-</footer>
+
+  <!-- Carousal middle container -->
+  <div class="middle-container">
+    <h1 class="headingOfMiddleContainer">What you can do.</h1>
+    <hr class="tophr">
 
 
-<!-- External javasript link -->
-<script src="/javascript/behave.js"></script>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+      <section id="features">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <h1>Ball to Ball scoring</h1>
+            <p class="paragraph">Stop using painful paper scorecards and score your matches on CricHeroes App just like an international match.</p>
+
+          </div>
+          <div class="carousel-item">
+            <h1>Live Scoring</h1>
+            <p class="paragraph">Share your live scores with the world and explore live scores of local cricket matches around you.</p>
+
+          </div>
+          <div class="carousel-item">
+            <h1>Tournaments</h1>
+            <p class="paragraph">Score local cricket tournaments just like the IPL! Have your own dedicated Tournament Page with Schedule, Leaderboard, Points Table, Sponsors, and much more, completely FREE!</p>
+
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <hr class="bottomhr">
+    </div>
+    </section>
+    <!-- Sign In Popup form -->
+    <div class="backGroundOnForm">
+      <div class="signInForm">
+        <form action="/signIn" method="POST">
+          <h1 class="signInText">Sign In</h1>
+          <input class="formTextBoxes form-control" name="signInUserName" type="text" placeholder="E-mail ID">
+          <input class="formTextBoxes form-control" name="signInPassword" type="password" placeholder="Password">
+          <div id="forgotPassword"><a href="">Forgot Password?</a></div>
+          <button id=signInButtons type="submit" class="btn btn-danger signInButtons">Sign In</button>
+          <button id="cancelButton" onclick="cancelButton()" type="button" class="btn btn-dark signInButtons">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Sign Up Popup form -->
+    <div class="signUpbackGroundOnForm">
+      <div class="signUpform">
+
+        <form action="/" class="" method="POST">
+          <h1>Sign UP</h1>
+          <h1 class="closeButton" onclick="signUpCloseButton()" id="signUpCloseButton">+</h1>
+          <input class="signUpFirstName signUpTextBoxes form-control" name="fName" type="text" placeholder="First name">
+          <input class="signUpSurname signUpTextBoxes form-control" name="lName" type="text" placeholder="Last name">
+          <input class="signUpEmail signUpTextBoxes form-control" name="eMail" type="email" placeholder="Enter email address">
+          <input class="signUpPass signUpTextBoxes form-control" name="pass" type="password" placeholder="Enter Password">
+          <input class="signUpRePass signUpTextBoxes form-control" name="rePass" type="password" placeholder="Re-enter Password">
+
+          <!-- Date Picker -->
+          <div class="row dob">
+            <div class='col-sm-6'>
+                <div class="form-group">
+                  <div class='input-group date' id='datepicker'>
+                    <input type='text' name="dateOfBirth" class="form-control" />
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+      <script>
+        $(function() {
+          $('#datepicker').datepicker({
+            format: "dd/mm/yyyy",
+            autoclose: true,
+            todayHighlight: true,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            autoclose: true,
+            changeMonth: true,
+            changeYear: true,
+            orientation: "button"
+          });
+        });
+      </script>
+
+      <div class="signUpText gender">Gender
+        <div class="buttons"></div>
+        <span class="_5k_3" data-type="radio" data-name="gender_wrapper" id="u_0_13">
+          <span class="_5k_2 _5dba">
+            <input type="radio" class="_8esa" name="sex" value="Female" id="u_0_6">
+            <label class="radioButton" for="u_0_6">Female</label>
+          </span>
+          <span class="_5k_2 _5dba">
+            <input type="radio" class="_8esa" name="sex" value="Male" id="u_0_7">
+            <label class="radioButton" for="u_0_7">Male</label>
+          </span>
+        </span>
+      </div>
+
+        <button type="submit" class="btn btn-danger signUpButton">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+  </div>
+  <footer class="footer">
+
+    <div class="footText">
+      wwww.crickzzz.com <br>
+      123-456-789
+    </div>
+    <div class="fontAwesome">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook fa-lg" style="color: white"></i></a>
+      <a href="https://www.facebook.com"><i class="fab fa-twitter fa-lg" style="color: white"></i></a>
+      <a href="https://www.facebook.com"><i class="fab fa-instagram fa-lg" style="color: white"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- External javasript link -->
+  <script src="/javascript/behave.js"></script>
 </body>
 
 
