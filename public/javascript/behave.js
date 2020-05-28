@@ -1,4 +1,5 @@
-
+const express = require("express");
+app.set('view engine', 'ejs')
 document.getElementById("signInButton").addEventListener("click", function signInButton(){
     document.querySelector(".backGroundOnForm").style.display="flex";
 });

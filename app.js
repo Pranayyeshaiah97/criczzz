@@ -58,6 +58,15 @@ const loggedInSchema = new mongoose.Schema({
 const LoggedInMember = mongoose.model("LoggedInMember", loggedInSchema);
 
 
+// app.post("/signIn", function(req,res){
+//   const searchObject = {
+//     emailID: req.body.signInUserName,
+//     password: req.body.signInPassword
+//   }
+//   const results = Member.find(searchObject);
+//   console.log(results);
+// });
+
 
 app.post("/signIn", function(req,res){
   Member.find(function(err, members){
