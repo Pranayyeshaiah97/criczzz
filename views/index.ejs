@@ -132,8 +132,8 @@
       <div class="signInForm">
         <form action="/signIn" method="POST">
           <h1 class="signInText">Sign In</h1>
-          <input class="formTextBoxes form-control" name="signInUserName" type="text" placeholder="E-mail ID">
-          <input class="formTextBoxes form-control" name="signInPassword" type="password" placeholder="Password">
+          <input class="formTextBoxes form-control" name="username" type="text" placeholder="E-mail ID">
+          <input class="formTextBoxes form-control" name="password" type="password" placeholder="Password">
           <div id="forgotPassword"><a href="">Forgot Password?</a></div>
           <button id=signInButtons type="submit" class="btn btn-danger signInButtons">Sign In</button>
           <button id="cancelButton" onclick="cancelButton()" type="button" class="btn btn-dark signInButtons">Cancel</button>
@@ -141,19 +141,18 @@
       </div>
     </div>
 
-
     <!-- Sign Up Popup form -->
     <div class="signUpbackGroundOnForm">
       <div class="signUpform">
 
-        <form action="/" class="" method="POST">
+        <form action="/signUpForm" class="" method="POST">
           <h1>Sign UP</h1>
           <h1 class="closeButton" onclick="signUpCloseButton()" id="signUpCloseButton">+</h1>
           <input class="signUpFirstName signUpTextBoxes form-control" name="fName" type="text" placeholder="First name">
           <input class="signUpSurname signUpTextBoxes form-control" name="lName" type="text" placeholder="Last name">
-          <input class="signUpEmail signUpTextBoxes form-control" name="eMail" type="email" placeholder="Enter email address">
-          <input class="signUpPass signUpTextBoxes form-control" name="pass" type="password" placeholder="Enter Password">
-          <input class="signUpRePass signUpTextBoxes form-control" name="rePass" type="password" placeholder="Re-enter Password">
+          <input class="signUpEmail signUpTextBoxes form-control" name="username" type="email" placeholder="Enter email address">
+          <input class="signUpPass signUpTextBoxes form-control" name="password" type="password" placeholder="Enter Password">
+          <input class="signUpRePass signUpTextBoxes form-control" name="rePassword" type="password" placeholder="Re-enter Password">
 
           <!-- Date Picker -->
           <div class="row dob">
