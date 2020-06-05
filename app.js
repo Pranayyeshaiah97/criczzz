@@ -68,6 +68,10 @@ const loggedInSchema = new mongoose.Schema({
 
 const LoggedInMember = mongoose.model("LoggedInMember", loggedInSchema);
 
+app.get("/", function(req,res){
+  res.render("index");
+});
+
 
 app.get("/addTeam", function(req,res){
   res.render("addTeam", {newPlayer: players});
